@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #14056b;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newTodos {
+  margin-top: 200px;
+}
+.newTodosBtn {
+  display: block;
+  margin: 0px auto;
+  width: 170px;
+  height: 45px;
+  font-size: 1.1rem;
+  border-radius: 7px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+}
+
+/* Input TODO: */
+
+.todoInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  border-radius: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0px 1px 3px 1px rgb(221, 219, 219);
+}
+
+.todoInput:hover {
+  box-shadow: 1px 4px 10px 2px rgb(221, 219, 219);
+  border: none;
+}
+
+.inputText {
+  outline: none;
+  border: none;
+  width: 485px;
+  height: 45px;
+  text-indent: 10px;
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
+
+.todo-inputBtn {
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBtn {
+  background-color: white;
+  border: none;
+  font-size: 1.9rem;
+  margin-right: 10px;
+  height: 30px;
+}
+
+.clearBtn {
+  font-size: 1.4rem;
+  height: 21px;
+}
+
+/* outout TODO: */
+
+.todoOutput {
+  box-shadow: rgb(148, 148, 148) 1px 2px 10px 1px;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.all-todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-content {
+  width: 280px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.toggle-todo {
+  width: 80px;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 25px;
+  font-size: 13px;
+  border: none;
+  background-color: white;
+  box-shadow: rgb(189, 189, 189) 0px 1px 2px 1px;
+}
+
+.toggle-todo:hover {
+  box-shadow: rgb(199, 198, 198) 0px 3px 5px 1px;
+}
+
+.todays-filterTodo {
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 135px;
+  padding: 0px 5px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  box-shadow: rgb(189, 189, 189) 0px 1px 2px 1px;
+}
+.todays-filterTodo:hover {
+  box-shadow: rgb(199, 198, 198) 0px 3px 5px 1px;
+}
+
+.all-todos h2 {
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.todays-todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoContainer {
+  width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.todo-section {
+  display: flex;
+  padding: 4px 0px;
+}
+.todo-text {
+  margin-left: 12px;
+}
+
+.todoBtn {
+  font-size: 1rem;
+  border: none;
+  margin: 5px;
+  background-color: #040535;
+  color: rgb(247, 247, 247);
+  box-shadow: rgb(0, 0, 8) 0px 1px 6px 3px;
+}
+
+.todoCheck {
+  width: 20px;
+  height: 20px;
+}
+
+/* Dropdown Menu TODO: */
+
+.dropdown {
+  user-select: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.dropdown-btn {
+  font-size: 2rem;
+  display: flex;
+  padding: 0px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dropdown-btn:hover {
+  border-radius: 30%;
+  background-color: #f0eeee;
+}
+
+.dropdown-content {
+  background-color: #e6e6e6;
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  font-size: 1rem;
+}
+
+.dropdown-content .dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: rgb(114, 114, 114);
+  color: white;
+  border-radius: 5px;
+}
+
+/* Mobile version of TODO:: */
+
+@media screen and (max-width: 450px) {
+  main {
+    padding: 50px 30px;
+  }
+
+  .newTodos {
+    text-align: center;
+  }
+  .newTodos h1{
+    margin-bottom: 50px;
+  }
+
+  .todoInput {
+    width: 380px;
+    border-radius: 30px;
+    margin-bottom: 70px;
+    box-shadow: 0px 1px 3px 1px rgb(221, 219, 219);
+  }
+
+  .inputText {
+    width: 260px;
+  }
+
+  .todoContainer {
+    width: 370px;
+  }
+
+  .todays-filterTodo {
+    margin-bottom: 30px;
+  }
+
+  .toggle-content {
+    margin: 20px auto 50px;
+  }
+}
